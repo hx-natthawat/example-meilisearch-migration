@@ -1,0 +1,21 @@
+{
+  "name": "migrate-algolia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "algolia-migrate": "node ./src/migrate/algolia/migrate.js",
+    "start": "parcel ./src/app/movies/index.html --global instantMeiliSearch --public-url /dev",
+    "build": "parcel build --global instantMeiliSearch ./src/app/movies/index.html"
+  },
+  "dependencies": {
+    "@meilisearch/instant-meilisearch": "^0.7.1",
+    "algoliasearch": "^4.13.1",
+    "dotenv": "^16.0.1",
+    "meilisearch": "^0.25.1",
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2"
+  }
+}
